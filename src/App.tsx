@@ -1,9 +1,12 @@
-import { useState } from 'react';
-
 import './App.css';
+import StarRating from './components/StarRating';
 
 function App() {
-  return <div className="text-3xl font-bold underline">Hello World</div>;
+  return (
+    <div className="w-full h-full bg-slate-100">
+      <StarRating totalStars={5} />
+    </div>
+  );
 }
 
 export default App;
